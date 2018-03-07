@@ -1,0 +1,68 @@
+.esriMap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:0;
+}
+
+
+/*map.InfoWindow css*/
+
+.esriPopup {
+    font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+.esriViewPopup .break {
+    height: 0;
+}
+.esriPopup .titlePane, .esriPopup .pointer.top, .esriPopup .pointer.topLeft, .esriPopup .pointer.topRight {
+    background-color: rgba(66, 139, 202, 0.85);
+}
+
+.esriPopup .contentPane, .esriPopup .actionsPane, .esriPopup .pointer, .esriPopup .outerPointer, .esriPopup .pointer.bottom, .esriPopup .pointer.bottomLeft, .esriPopup .pointer.bottomRight {
+    background-color: rgba(247, 247, 247, 0.85);
+}
+
+.esriPopup .titleButton.maximize {
+    display: none;
+}
+
+.esriPopup .titleButton.close {
+    opacity: 1;
+}
+
+.esriPopup .outerPointer, .esriPopup .pointer, .esriPopup .outerPointer, .esriPopup .pointer.bottom, .esriPopup .pointer.bottomLeft, .esriPopup .pointer.bottomRight {
+    opacity: 0.85;
+}
+
+#_internal_LabelLayer_layer text {
+    font-size: 12px;
+}
+
+
+/*LayerList css*/
+
+.esriLayerList .esriToggleButton {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+.esriLayerList .esriLegendService, .esriLayerList .esriSubList {
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.esriLayerList .esriSubList .esriSubList {
+    overflow-y: initial;
+    max-height: initial;
+}
+
+.actionsPane .actionList {
+    display: none;
+}
+
+
+.timeSliderPanel .dijitRuleLabelH{font-weight: bold;}
