@@ -22,6 +22,7 @@ import StatisticDefinition = require("esri/tasks/StatisticDefinition")
 import FeatureLayer = require("esri/layers/FeatureLayer")
 import HeatmapRenderer = require("esri/renderers/HeatmapRenderer")
 
+// import config = require("../../config/mapConfig")
 
 import lang = require("dojo/_base/lang")
 
@@ -32,7 +33,7 @@ class MapUtils {
     static pageName: string
 
     static initMap(divId = 'mapDiv', options?: esri.MapOptions) {
-        var defaultOpt = { divId: divId, options: { logo: false, zoom: 0, slider: false, showLabels: true } };
+        var defaultOpt = { divId: divId, options: { lods: config.lods, logo: false, zoom: 0, slider: false, showLabels: true } };
         lang.mixin(defaultOpt.options, options);
         if (defaultOpt.options.zoom === -1) delete defaultOpt.options.zoom;
         var map = new Map(defaultOpt.divId, defaultOpt.options as esri.MapOptions)

@@ -20,3 +20,9 @@ export const VisibilityFilters = {
   SHOW_COMPLETED: 'SHOW_COMPLETED',
   SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
+
+
+export const creatMap= (map) => ({
+  type: 'CREATE_MAP',
+  map: map
+})

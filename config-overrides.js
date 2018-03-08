@@ -21,11 +21,20 @@ module.exports = function override(config, env) {
         })
     };
 
+    /**主题切换 */
     config = rewireLess.withLoaderOptions({
         modifyVars: {
             "@primary-color": "#1DA57A",
             '@icon-url': '"../../../../../compileLibs/iconfont/iconfont"'
         },
     })(config, env);
+
+    if (env === 'production') {
+        config.devtool = false;// 禁止输出sourcemap
+    }
+    
+    // console.log(env)
+    // console.log(config.module.rules)
+
     return config;
 }
