@@ -6,7 +6,7 @@ import { createStore } from 'redux'
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-// import reducer from './reducers'
+// import reducer from './components/todoApp/reducers'
 // import TodoApp from './view/todoApp';
 
 import OneMap, { reducer } from './view/oneMap';
