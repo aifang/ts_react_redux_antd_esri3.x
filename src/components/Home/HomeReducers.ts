@@ -1,7 +1,9 @@
-const setHome = (state = null, action) => {
+const setHome = (state = {}, action) => {
     switch (action.type) {
         case 'SET_HOME':
-            return action.map
+            let cc = Object.assign({}, state)
+            console.log(cc)
+            return cc
         default:
             return state
     }

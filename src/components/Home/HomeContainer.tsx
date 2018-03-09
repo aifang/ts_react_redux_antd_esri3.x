@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { setHome } from './HomeAction'
+// import { setHome } from './HomeAction'
 import HomeUI from './Home'
 
 // interface Props {
@@ -12,9 +12,9 @@ const mapStateToProps = (state, ownProps) => ({
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-    onClick: () => {
-        dispatch(setHome(ownProps.map))
-    }
+    // onClick: () => {
+    //     dispatch(setHome(ownProps.map))
+    // }
 })
 
 const Home = connect(

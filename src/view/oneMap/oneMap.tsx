@@ -1,6 +1,6 @@
 import * as React from 'react'
 import MainMap from '../../components/MainMap';
-import Home from '../../components/Home/Home';
+import Home from '../../components/Home/HomeContainer';
 
 
 // const OneMap = () => (
@@ -14,7 +14,7 @@ class OneMap extends React.Component {
     render() {
         return (
             <div style={{ height: '100%', width: '100%' }}>
-                <Home map={null} onClick={null}/>
+                <Home/>
                 <MainMap />
             </div>
         )

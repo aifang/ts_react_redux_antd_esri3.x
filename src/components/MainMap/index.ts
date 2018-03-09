@@ -1,3 +1,4 @@
-import MainMap from "./MainMap";
+import MainMap from "./MainMapContainer";
+
 
 export default MainMap

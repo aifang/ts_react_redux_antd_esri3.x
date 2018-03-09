@@ -6,20 +6,21 @@ import { createStore } from 'redux'
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-import reducer from './reducers'
-import TodoApp from './view/todoApp';
-import OneMap from './view/oneMap';
+// import reducer from './reducers'
+// import TodoApp from './view/todoApp';
+
+import OneMap, { reducer } from './view/oneMap';
 
 
-
-let store = createStore(reducer)
+//__REDUX_DEVTOOLS_EXTENSION__,搭配chrome redux devtools extension 使用
+let store = createStore(reducer, window['__REDUX_DEVTOOLS_EXTENSION__'] && window['__REDUX_DEVTOOLS_EXTENSION__']())
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Switch>
         <Route exact path="/" component={OneMap} />
-        <Route path="/todo" component={TodoApp} />
+        {/* <Route path="/todo" component={TodoApp} /> */}
       </Switch>
     </Router>
   </Provider>,

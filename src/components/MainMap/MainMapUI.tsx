@@ -1,11 +1,3 @@
-import * as React from 'react';
-import esriLoader from 'esri-loader';
-import { creatMap } from '../../actions';
-import { connect } from 'react-redux';
-
-
-
-
 // 地图引用，仅用于提示，不可直接用
 import Map from "esri/map";
 import Extent from "esri/geometry/Extent";
@@ -22,6 +14,11 @@ import ArcGISDynamicMapServiceLayer from "esri/layers/ArcGISDynamicMapServiceLay
 import FeatureLayer from "esri/layers/FeatureLayer";
 import HeatmapRenderer from "esri/renderers/HeatmapRenderer";
 import GraphicsLayer from "esri/layers/GraphicsLayer";
+
+// 真实代码引用
+import * as React from 'react';
+import esriLoader from 'esri-loader';
+import { creatMap } from './MainMapAction';
 
 
 
@@ -47,7 +44,7 @@ interface State {
 /**
  * 主地图
  */
-export class MainMap extends React.Component<Props, State> {
+export default class MainMap extends React.Component<Props, State> {
 
     //初始化属性
     // static defaultProps = {
@@ -141,6 +138,3 @@ export class MainMap extends React.Component<Props, State> {
 
 
 
-const Home = connect()(MainMap)
-
-export default Home
