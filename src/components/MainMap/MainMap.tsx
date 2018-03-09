@@ -18,7 +18,7 @@ import GraphicsLayer from "esri/layers/GraphicsLayer";
 // 真实代码引用
 import * as React from 'react';
 import esriLoader from 'esri-loader';
-import { creatMap } from './MainMapAction';
+import { creatMap } from './action';
 
 
 

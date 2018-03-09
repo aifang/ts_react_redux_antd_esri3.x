@@ -12,7 +12,7 @@ import './index.css';
 import OneMap, { reducer } from './view/oneMap';
 
 
-//__REDUX_DEVTOOLS_EXTENSION__,搭配chrome redux devtools extension 使用
+//__REDUX_DEVTOOLS_EXTENSION__,搭配chrome redux devtools extension 使用 方便观察store
 let store = createStore(reducer, window['__REDUX_DEVTOOLS_EXTENSION__'] && window['__REDUX_DEVTOOLS_EXTENSION__']())
 
 ReactDOM.render(

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import mainMapUI from './MainMapUI';
+import mainMapUI from './MainMap';
 
 
 const mainMap = connect()(mainMapUI)

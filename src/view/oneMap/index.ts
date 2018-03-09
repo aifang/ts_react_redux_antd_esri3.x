@@ -1,5 +1,5 @@
-import OneMap from "./oneMap"
-import reducer from "./oneMapReducer"
+import oneMap from "./oneMap"
+import reducer from "./reducer"
 
-export default OneMap
+export default oneMap
 export { reducer }
